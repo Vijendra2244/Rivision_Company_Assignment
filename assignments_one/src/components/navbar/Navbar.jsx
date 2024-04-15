@@ -36,7 +36,18 @@ function Navbar() {
         justifyContent={"space-between"}
       >
         <Box display={"flex"} alignItems={"center"}>
-          <img src={profile} />
+          <Menu>
+            <MenuButton colorScheme="white" as={Button}>
+              <img src={profile} />
+            </MenuButton>
+            <MenuList>
+              <MenuItem>My Profile</MenuItem>
+              <MenuItem>Flipkart Plus Zone</MenuItem>
+              <MenuItem>Order</MenuItem>
+              <MenuItem>Wishlist</MenuItem>
+             
+            </MenuList>
+          </Menu>
           <p className={styles.profile}>
             Login
             <FaAngleDown />
