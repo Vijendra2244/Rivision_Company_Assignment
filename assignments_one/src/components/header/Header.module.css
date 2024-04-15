@@ -1,0 +1,8 @@
+.main {
+  background-color: white;
+  margin: 0.6rem;
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+  
+}

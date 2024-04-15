@@ -1,0 +1,99 @@
+.mainContainerOfSlider {
+  position: relative;
+  width: 80%;
+  background-color: white;
+  margin: 1rem;
+}
+.m {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.imag {
+  width: 30%;
+  height: auto;
+  margin: 1rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.imag > img {
+  max-width: 70%;
+}
+
+.mainContainer {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  overflow: auto;
+}
+.mainContainer::-webkit-scrollbar {
+  height: 2px;
+}
+
+.carouselImageContainer {
+  padding: 1rem;
+  height: 100px;
+  width: 2000px;
+}
+.carouselHeading {
+  color: black;
+  margin-left: 0.4rem;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.carouselImage {
+  height: 20vh;
+}
+.leftButton {
+  position: absolute;
+  left: 2%;
+  top: 30%;
+  padding: 1.5rem 0.5rem;
+  font-size: 1.2rem;
+  opacity: 0.3;
+  color: var(--mainColor);
+  border: 1px solid var(--mainColor);
+  border-radius: 2px;
+  background-color: white;
+}
+.rightButton {
+  position: absolute;
+  left: 95%;
+  top: 30%;
+  padding: 1.5rem 0.5rem;
+  font-size: 1.2rem;
+  opacity: 0.3;
+  border: 1px solid var(--mainColor);
+  border-radius: 2px;
+  color: var(--mainColor);
+  background-color: white;
+}
+
+.leftButton:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+.rightButton:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: 1s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .mainContainerOfSlider {
+    width: 100%;
+  }
+  .rightButton {
+    left: 92%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .mainContainerOfSlider {
+    width: 100%;
+  }
+  .rightButton {
+    left: 90%;
+  }
+}

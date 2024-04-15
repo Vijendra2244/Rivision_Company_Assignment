@@ -1,0 +1,32 @@
+/* Add this CSS to your stylesheet */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px; /* Adjust width as needed */
+  height: 60px; /* Adjust height as needed */
+  background-color: #F1F2F4; /* Background color */
+  color: black; /* Text color */
+  border-radius: 10px; /* Make the buttons round */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1; /* Ensure buttons appear on top of slides */
+  cursor: pointer;
+
+
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 15px; 
+}
+
+.swiper-button-prev {
+  left: 1px; /* Position the previous button */
+}
+
+.swiper-button-next {
+  right: 1px; /* Position the next button */
+}

@@ -1,0 +1,29 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+}
+.search {
+  font-size: 2rem;
+}
+.inpt {
+  flex: 1;
+  background-color: #f0f5ff;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+}
+.inputSearch {
+  display: flex;
+  gap: 1rem;
+  width: 50%;
+  align-items: center;
+  background-color: #f0f5ff;
+  border-radius: 6px;
+  padding: 5px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
