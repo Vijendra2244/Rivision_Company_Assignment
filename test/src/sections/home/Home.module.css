@@ -1,0 +1,32 @@
+.formField {
+  position: relative;
+  top: 80%;
+  left: 30%;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 30px;
+  width: 40%;
+  padding: 13px;
+  background-color: #2d3748;
+
+}
+.input {
+  width: 95%;
+  background-color: #2d3748;
+  border: none;
+  outline: none;
+}
+.button {
+  padding: 4px;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+}
+.result {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: bold;
+  width: 70%;
+
+  margin: 0 auto;
+}
