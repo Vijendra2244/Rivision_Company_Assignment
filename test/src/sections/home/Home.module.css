@@ -8,7 +8,6 @@
   width: 40%;
   padding: 13px;
   background-color: #2d3748;
-
 }
 .input {
   width: 95%;
@@ -23,10 +22,15 @@
   border-radius: 15px;
 }
 .result {
+  height: 70%;
   text-align: justify;
   font-size: 20px;
   font-weight: bold;
   width: 70%;
-
+  overflow: scroll;
   margin: 0 auto;
+  padding: 10px;
+}
+.result::-webkit-scrollbar {
+  height: 1px;
 }

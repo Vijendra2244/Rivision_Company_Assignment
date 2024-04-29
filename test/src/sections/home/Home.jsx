@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import styles from "./Home.module.css";
 import { FaArrowUp } from "react-icons/fa";
+import Sidebar from "../sidebar/Sidebar";
 
 function Home() {
   const [res, setRes] = useState("");
@@ -32,19 +33,26 @@ function Home() {
   }
   return (
     <>
-      <form className={styles.formField} onSubmit={run}>
-        <input
-          className={styles.input}
-          onChange={(e) => setInpt(e.target.value)}
-          type="text"
-          placeholder="Enter your prompt here..."
-          value={inpt}
-        />
-        <button className={styles.button} type="submit">
-          <FaArrowUp />
-        </button>
-      </form>
-      {think ? "Bot is Thinking....." : <p className={styles.result}>{res}</p>}
+     
+
+        <form className={styles.formField} onSubmit={run}>
+          <input
+            className={styles.input}
+            onChange={(e) => setInpt(e.target.value)}
+            type="text"
+            placeholder="Enter your prompt here..."
+            value={inpt}
+            />
+          <button className={styles.button} type="submit">
+            <FaArrowUp />
+          </button>
+        </form>
+        {think ? (
+          "Bot is Thinking....."
+        ) : (
+          <p className={styles.result}>{res}</p>
+        )}
+       
     </>
   );
 }
