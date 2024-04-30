@@ -27,10 +27,13 @@
   font-size: 20px;
   font-weight: bold;
   width: 70%;
-  overflow: scroll;
   margin: 0 auto;
   padding: 10px;
+  white-space: pre-wrap;
 }
-.result::-webkit-scrollbar {
+.type {
+  overflow: scroll;
+}
+.type::-webkit-scrollbar {
   height: 1px;
 }
